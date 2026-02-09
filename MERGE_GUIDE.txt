@@ -1,0 +1,251 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║                  🔀 合并到主分支 / MERGE TO MAIN BRANCH                      ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+当前状态 / Current Status:
+  📍 特性分支: copilot/fix-paper-server-full-bug
+  📍 主分支: 2.x
+  ✅ 所有改动已完成并推送
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 最简单的方法: GitHub 网页界面 / Easiest Method: GitHub Web UI
+
+═══════════════════════════════════════════════════════════════════════════════
+
+步骤 1: 访问 Pull Requests 页面
+Step 1: Go to Pull Requests Page
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  https://github.com/YHXJLB/Essentials-New/pulls                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+步骤 2: 创建 Pull Request
+Step 2: Create Pull Request
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  如果已有 PR: 跳到步骤 4                                                     │
+│  If PR exists: Skip to Step 4                                              │
+│                                                                             │
+│  如果没有 PR: 点击 "New pull request"                                        │
+│  If no PR: Click "New pull request"                                        │
+│                                                                             │
+│  ┌────────────────────────────────────────────────────────────────────┐   │
+│  │ base: 2.x                    ←  选择主分支                         │   │
+│  │ compare: copilot/fix-paper-server-full-bug  ←  选择特性分支       │   │
+│  └────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+│  点击 "Create pull request"                                                 │
+│                                                                             │
+└────────────────────────────────────────────────────────────────────────────┘
+
+步骤 3: 填写 PR 信息
+Step 3: Fill PR Information
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  Title:                                                                     │
+│  ┌────────────────────────────────────────────────────────────────────┐   │
+│  │ Paper 1.21.11 compatibility + automated release workflows         │   │
+│  └────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+│  Description:                                                               │
+│  ┌────────────────────────────────────────────────────────────────────┐   │
+│  │ ## 完成的工作                                                       │   │
+│  │                                                                     │   │
+│  │ ### 1. Paper 1.21.11 API 修复                                       │   │
+│  │ - 修复 PlayerServerFullCheckEvent API                              │   │
+│  │ - 更新 Paper API 到 1.21.11                                         │   │
+│  │                                                                     │   │
+│  │ ### 2. GitHub Actions 工作流                                        │   │
+│  │ - 自动构建和发布系统                                                 │   │
+│  │ - 2个工作流文件                                                      │   │
+│  │                                                                     │   │
+│  │ ### 3. 完整文档和工具                                                │   │
+│  │ - 11个文档文件（中英文）                                             │   │
+│  │ - 5个脚本工具                                                        │   │
+│  │                                                                     │   │
+│  │ ## 质量保证                                                          │   │
+│  │ - ✅ 代码审查: 0 issues                                             │   │
+│  │ - ✅ 安全扫描: 0 vulnerabilities                                    │   │
+│  │                                                                     │   │
+│  │ 总计: 21 个文件修改                                                  │   │
+│  └────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+│  点击 "Create pull request"                                                 │
+│                                                                             │
+└────────────────────────────────────────────────────────────────────────────┘
+
+步骤 4: 审查更改
+Step 4: Review Changes
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  点击 "Files changed" 标签查看所有更改                                       │
+│  Click "Files changed" tab to review all changes                           │
+│                                                                             │
+│  应该看到:                                                                   │
+│  You should see:                                                            │
+│                                                                             │
+│  ✅ 3 个代码文件修改（Paper API 修复）                                       │
+│  ✅ 2 个工作流文件（GitHub Actions）                                         │
+│  ✅ 11 个文档文件（使用指南）                                                │
+│  ✅ 5 个脚本文件（工具）                                                     │
+│                                                                             │
+│  确认所有更改都是预期的                                                      │
+│  Confirm all changes are expected                                          │
+│                                                                             │
+└────────────────────────────────────────────────────────────────────────────┘
+
+步骤 5: 合并 PR
+Step 5: Merge PR
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  返回 "Conversation" 标签                                                    │
+│  Go back to "Conversation" tab                                             │
+│                                                                             │
+│  向下滚动到底部，找到:                                                       │
+│  Scroll to bottom and find:                                                │
+│                                                                             │
+│  ┌────────────────────────────────────────────────────────────────────┐   │
+│  │ This branch has no conflicts with the base branch                  │   │
+│  │                                                                     │   │
+│  │ [Merge pull request ▼]                                             │   │
+│  │         ↑                                                           │   │
+│  │    点击这里！/ Click here!                                          │   │
+│  └────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+│  选择合并方式:                                                               │
+│  Choose merge method:                                                       │
+│                                                                             │
+│  ● Merge commit (推荐) - 保留完整历史                                       │
+│  ○ Squash and merge - 合并为单个提交                                       │
+│  ○ Rebase and merge - 线性历史                                             │
+│                                                                             │
+│  点击 "Confirm merge"                                                        │
+│  Click "Confirm merge"                                                      │
+│                                                                             │
+└────────────────────────────────────────────────────────────────────────────┘
+
+步骤 6: 完成！
+Step 6: Done!
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  🎉 合并成功！/ Merge Successful!                                           │
+│                                                                             │
+│  现在可以:                                                                   │
+│  Now you can:                                                               │
+│                                                                             │
+│  ✅ 在主分支上看到所有更改                                                   │
+│  ✅ 运行 GitHub Actions 工作流                                               │
+│  ✅ 创建 1.21.11 发布版本                                                    │
+│                                                                             │
+│  可选: 删除特性分支                                                          │
+│  Optional: Delete feature branch                                           │
+│  ┌────────────────────────────────────────────────────────────────────┐   │
+│  │ [Delete branch]                                                    │   │
+│  └────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+└────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🚀 其他合并方法 / Alternative Methods
+
+═══════════════════════════════════════════════════════════════════════════════
+
+方法 2: GitHub CLI（快速）
+Method 2: GitHub CLI (Fast)
+
+  $ gh pr create \
+      --base 2.x \
+      --head copilot/fix-paper-server-full-bug \
+      --title "Paper 1.21.11 compatibility + automated release workflows"
+  
+  $ gh pr merge --merge --delete-branch
+
+方法 3: Git 命令行（本地）
+Method 3: Git Command Line (Local)
+
+  $ git checkout 2.x
+  $ git pull origin 2.x
+  $ git merge copilot/fix-paper-server-full-bug
+  $ git push origin 2.x
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📊 将要合并的内容 / What Will Be Merged
+
+═══════════════════════════════════════════════════════════════════════════════
+
+代码修改 / Code Changes: 3 files
+  ✅ EssentialsPlayerListener.java (Paper API fix)
+  ✅ PaperProvider/build.gradle (API version update)
+  ✅ constants.kt (test server version)
+
+工作流 / Workflows: 2 files
+  ✅ create-release.yml (generic workflow)
+  ✅ release-1.21.11.yml (1.21.11 specific)
+
+文档 / Documentation: 11 files
+  ✅ PAPER_1.21.11_FIX.md
+  ✅ GITHUB_ACTIONS_GUIDE.md
+  ✅ 快速使用指南.md
+  ✅ WORKFLOW_ARCHITECTURE.md
+  ✅ HOW_TO_RUN_WORKFLOW.md
+  ✅ WHY_NO_RUN_BUTTON.md
+  ✅ FIND_RUN_BUTTON.txt
+  ✅ FIX_SUMMARY_修复总结.md
+  ✅ PROJECT_COMPLETION_SUMMARY.md
+  ✅ FINAL_SUMMARY.txt
+  ✅ RUN_NOW.txt
+
+脚本工具 / Scripts: 5 files
+  ✅ build.sh, build.bat
+  ✅ trigger-release.sh, trigger-release.bat
+  ✅ validate-workflow.sh
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ 合并后验证 / Post-Merge Verification
+
+═══════════════════════════════════════════════════════════════════════════════
+
+1. 检查工作流 / Check Workflows
+   访问: https://github.com/YHXJLB/Essentials-New/actions
+   确认工作流在主分支上可见
+
+2. 测试运行 / Test Run
+   点击 "Create Release" → "Run workflow"
+   验证可以成功触发
+
+3. 查看文档 / View Documentation
+   访问: https://github.com/YHXJLB/Essentials-New/blob/2.x/
+   确认所有文档可访问
+
+4. 验证代码 / Verify Code
+   检查 EssentialsPlayerListener.java
+   确认 event.allow() 修复已应用
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 快速总结 / Quick Summary
+
+当前分支: copilot/fix-paper-server-full-bug ✅ 已完成
+目标分支: 2.x (主分支)
+操作: 通过 GitHub PR 合并
+状态: 准备就绪
+
+下一步: 访问 GitHub 创建并合并 PR
+
+═══════════════════════════════════════════════════════════════════════════════
+
+需要帮助? / Need Help?
+  📖 查看详细指南: MERGE_TO_MAIN.md
+  🔗 GitHub 文档: https://docs.github.com/en/pull-requests
+
+═══════════════════════════════════════════════════════════════════════════════

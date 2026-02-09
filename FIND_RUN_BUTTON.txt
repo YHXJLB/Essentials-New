@@ -1,0 +1,219 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║              🔍 如何找到 "Run workflow" 按钮 / How to Find Button            ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+问题：在 GitHub Actions 页面找不到 "Run workflow" 按钮
+Problem: Cannot find "Run workflow" button on GitHub Actions page
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ 解决方案：切换到正确的分支 / Solution: Switch to Correct Branch
+
+工作流文件在分支: copilot/fix-paper-server-full-bug
+Workflow files are on branch: copilot/fix-paper-server-full-bug
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📋 详细步骤 / Detailed Steps:
+
+第 1 步：访问 Actions 页面
+Step 1: Go to Actions page
+┌────────────────────────────────────────────────────────────────────────────┐
+│  https://github.com/YHXJLB/Essentials-New/actions                          │
+└────────────────────────────────────────────────────────────────────────────┘
+
+第 2 步：选择工作流
+Step 2: Select a workflow
+
+在左侧栏找到并点击：
+In the left sidebar, find and click:
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  All workflows                                                              │
+│                                                                             │
+│  ☐ Build and Release 1.21.11        ← 点击这个                             │
+│  ☐ Create Release                   ← 或点击这个                           │
+│  ☐ Build EssentialsX                                                       │
+│  ☐ Build Pull Request                                                      │
+│  ...                                                                        │
+└────────────────────────────────────────────────────────────────────────────┘
+
+第 3 步：重要！切换分支
+Step 3: IMPORTANT! Switch Branch
+
+选择工作流后，在右侧区域顶部会看到：
+After selecting workflow, you'll see at the top of the right area:
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  This workflow has a workflow_dispatch event trigger.                      │
+│                                                                             │
+│  ┌──────────────────────────────┐     ┌─────────────────┐                │
+│  │ Branch: main             [▼] │     │  Run workflow   │ ← 可能是灰色    │
+│  └──────────────────────────────┘     └─────────────────┘                │
+│         ↑                                                                  │
+│    点击这个下拉菜单！                                                        │
+│    Click this dropdown!                                                    │
+│                                                                             │
+└────────────────────────────────────────────────────────────────────────────┘
+
+第 4 步：选择正确的分支
+Step 4: Select Correct Branch
+
+在下拉菜单中找到并选择：
+In the dropdown menu, find and select:
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  Select a branch                                                            │
+│  ┌────────────────────────────────────────────────────────────────────┐   │
+│  │ 🔍 Filter branches                                                 │   │
+│  └────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+│  ○ main                                                                     │
+│  ○ 2.x                                                                      │
+│  ● copilot/fix-paper-server-full-bug     ← 选择这个！                      │
+│                                                                             │
+└────────────────────────────────────────────────────────────────────────────┘
+
+第 5 步：现在按钮应该可用了！
+Step 5: Now the button should be available!
+
+切换分支后：
+After switching branch:
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  This workflow has a workflow_dispatch event trigger.                      │
+│                                                                             │
+│  ┌──────────────────────────────────────────────────────────┐             │
+│  │ Branch: copilot/fix-paper-server-full-bug           [▼]  │             │
+│  └──────────────────────────────────────────────────────────┘             │
+│                                                                             │
+│                      ┌─────────────────────┐                               │
+│                      │   Run workflow      │  ← 现在是绿色可点击！         │
+│                      └─────────────────────┘                               │
+│                                  ↑                                          │
+│                            点击这里运行！                                    │
+│                                                                             │
+└────────────────────────────────────────────────────────────────────────────┘
+
+第 6 步：填写表单并运行
+Step 6: Fill Form and Run
+
+点击 "Run workflow" 后会出现表单：
+After clicking "Run workflow", a form will appear:
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  Run workflow                                                               │
+│                                                                             │
+│  Use workflow from                                                          │
+│  ┌────────────────────────────────────────────────────────────────────┐   │
+│  │ Branch: copilot/fix-paper-server-full-bug                      [▼] │   │
+│  └────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+│  Tag *                                                                      │
+│  ┌────────────────────────────────────────────────────────────────────┐   │
+│  │ 1.21.11                                                            │   │
+│  └────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+│  Release name *                                                             │
+│  ┌────────────────────────────────────────────────────────────────────┐   │
+│  │ EssentialsX 1.21.11 for Paper 1.21.11                             │   │
+│  └────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+│  Prerelease                                                                 │
+│  ☐ Mark as pre-release                                                     │
+│                                                                             │
+│                  ┌──────────────────────────────┐                          │
+│                  │      Run workflow            │                          │
+│                  └──────────────────────────────┘                          │
+│                                                                             │
+└────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 快速总结 / Quick Summary
+
+找不到按钮的原因：
+Reason for no button:
+  ❌ 工作流在特性分支上
+  ❌ Workflow is on feature branch
+  ❌ GitHub 默认显示主分支
+  ❌ GitHub shows main branch by default
+
+解决方法：
+Solution:
+  ✅ 在 Actions 页面切换到 copilot/fix-paper-server-full-bug 分支
+  ✅ Switch to copilot/fix-paper-server-full-bug branch in Actions page
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🔄 其他运行方法 / Alternative Methods
+
+如果上述方法不work，可以尝试：
+If above doesn't work, try:
+
+方法 1: 使用 GitHub CLI
+Method 1: Use GitHub CLI
+
+  $ gh workflow run create-release.yml \
+      -f tag=1.21.11 \
+      -f release_name="EssentialsX 1.21.11 for Paper 1.21.11" \
+      -f prerelease=false
+
+方法 2: 推送标签（自动触发）
+Method 2: Push Tag (Auto-trigger)
+
+  $ git tag -a 1.21.11 -m "EssentialsX 1.21.11 for Paper 1.21.11"
+  $ git push origin 1.21.11
+
+方法 3: 合并 PR 到主分支
+Method 3: Merge PR to Main Branch
+
+  将 PR 合并后，工作流会在主分支上可用
+  After merging PR, workflow will be available on main branch
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ 验证工作流配置 / Verify Workflow Config
+
+两个工作流都已正确配置 workflow_dispatch：
+Both workflows have workflow_dispatch correctly configured:
+
+✓ .github/workflows/create-release.yml        - HAS workflow_dispatch
+✓ .github/workflows/release-1.21.11.yml       - HAS workflow_dispatch
+
+配置没有问题！只是需要在正确的分支上查看。
+Configuration is fine! Just need to view on the correct branch.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📞 还有问题？/ Still Having Issues?
+
+1. 刷新页面（Ctrl+F5）
+   Refresh page (Ctrl+F5)
+
+2. 清除浏览器缓存
+   Clear browser cache
+
+3. 确认您有仓库的写权限
+   Confirm you have write access to repository
+
+4. 查看详细文档：WHY_NO_RUN_BUTTON.md
+   See detailed docs: WHY_NO_RUN_BUTTON.md
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎉 现在试试吧！/ Try It Now!
+
+1. 访问: https://github.com/YHXJLB/Essentials-New/actions
+2. 选择工作流
+3. 切换到 copilot/fix-paper-server-full-bug 分支
+4. 点击 "Run workflow"
+5. 享受自动化构建！
+
+Good luck! 🚀
+
+═══════════════════════════════════════════════════════════════════════════════

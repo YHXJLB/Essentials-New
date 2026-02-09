@@ -662,7 +662,7 @@ public class EssentialsPlayerListener implements Listener {
         @EventHandler(priority = EventPriority.HIGH)
         public void onPlayerListFull(final PlayerServerFullCheckEvent event) {
             if (ess.getPermissionsHandler().isOfflinePermissionSet(event.getPlayerProfile().getId(), "essentials.joinfullserver")) {
-                event.allow(true);
+                event.allow();
                 return;
             }
 
