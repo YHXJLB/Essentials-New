@@ -76,6 +76,18 @@ These changes only affect Paper 1.21.11 compatibility and do not impact other ve
 
 Due to network restrictions, the build cannot be completed in the current environment. Run the following commands in an environment with network access:
 
+### 方式 1: 使用构建脚本 (Method 1: Using Build Scripts)
+
+```bash
+# Linux/macOS
+./build.sh
+
+# Windows
+build.bat
+```
+
+### 方式 2: 手动构建 (Method 2: Manual Build)
+
 ```bash
 # Linux/macOS
 ./gradlew clean build
